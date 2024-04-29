@@ -17,6 +17,7 @@ if torch.cuda.is_available():
     torch.cuda.set_device(gpu_id)
 
 
+
 device = "cuda" if torch.cuda.is_available() else "cpu"
 
 processor = AutoProcessor.from_pretrained("Salesforce/blip2-opt-2.7b")
